@@ -1,7 +1,7 @@
 ---
 title: Group Website
 layout: page
-nav_order: 3
+nav_order: 4
 ---
 The group [website](https://www.rmmrgroup.org) is hosted via AWS Amplify.
 
