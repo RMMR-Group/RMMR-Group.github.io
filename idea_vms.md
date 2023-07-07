@@ -3,6 +3,7 @@ layout: page
 title: Using IDEA Virtual Machines
 nav_order: 3
 ---
+# Using IDEA Virtual Machines
 
 ## Overview
 
