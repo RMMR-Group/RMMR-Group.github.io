@@ -4,6 +4,8 @@ layout: page
 nav_order: 2
 ---
 
+# Writing Documentation
+
 ## What to document
 
 The general philosophy is to document anything that you think someone else might have to do after you, and that took you more than a simple google search to figure out. In general, it's better to err on the side of writing a sketchy note, rather than waiting until you have time to write perfect documentation (and then never getting around to writing the perfect document).
