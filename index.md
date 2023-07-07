@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
 
 This is the documentation for the Robust Methods in Magnetic Resonance (RMMR) Group at the University of Pennsylvania.
