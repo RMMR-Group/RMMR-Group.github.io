@@ -1,5 +1,5 @@
 ---
-title: RMMR Group Documentation
+title: Home
 layout: home
 ---
 
