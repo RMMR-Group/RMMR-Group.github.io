@@ -1,7 +1,7 @@
---
+---
 layout: default
 title: Using IDEA Virtual Machines
---
+---
 
 ## Overview
 
