@@ -14,7 +14,7 @@ If you find documentation that is out of date, please do try to update it. Every
 
 ## Editing the docs
 
-The repos for the documentation is here: [https://github.com/RMMR-Group/rmmr_group_docs](https://github.com/RMMR-Group/rmmr_group_docs)
+The repos for the documentation is here: [https://github.com/RMMR-Group/RMMR-Group.github.io](https://github.com/RMMR-Group/RMMR-Group.github.io)
 
 In general we're not requiring pull requests, etc. as we're not too worried about "breaking" changes to the documentation. Just edit directly on the `main` branch and commit when you're done. Please review your edits on the live website (changes can take a few minutes to appear after you commit them), and fix anything that's not right, so we can keep the docs tidy.
 
