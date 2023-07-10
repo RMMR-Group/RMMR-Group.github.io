@@ -19,7 +19,7 @@ You'll first need a PMACS account (ask Dylan to file a ticket for you). Once you
 
 * Ticket Description: New user setup for Robust Methods of Magnetic Resonance (RMMR)
 * PennKey:
-* Group: VPN-rad-tisdal
+* Group: VPN-rad-tisdal, Vcenter-rad-tisdall
 
 ## Setting up a new virtual machine
 
