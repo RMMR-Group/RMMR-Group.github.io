@@ -68,7 +68,7 @@ Log in as `root`. It will not require a password.
 We need to bring this machine's network connection online at the correct IP address. To do this, run:
 
 ```
-ifconfig up eth0 <ip>
+ifconfig eth0 up <ip>
 ifconfig eth0 netmask 255.255.255.0
 ```
 
