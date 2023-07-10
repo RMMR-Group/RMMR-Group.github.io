@@ -36,6 +36,7 @@ Here's a list of the templates associated with each IDEA verson
 |IDEA Version	| Windows					| Linux 					|
 | ----		| ----						| ----						|
 | N4VE11C	| RAD-MRI_VE11C_Distribution_Win7_Template 	|  RAD-MRI_VE11C_linux_win7_20160120_mars	|
+| N4VE12U_SP01	| RAD-MRI_VE12U-SP01_Distribution1_Win7_Template|  RAD-MRI_VE12U-SP01_Distribution_linux_Win7_Template	|
 | NXVA30A	| RAD-MRI_XA30A_DistributionOVF_win10_Template 	|  RAD-MRI_XA30A_DistributionOVF_linux_win10_Template	|
 
 
