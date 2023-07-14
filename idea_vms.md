@@ -166,6 +166,14 @@ If something goes wrong, you can always request PMACS to reset the VM. **THIS WI
 * Linux Template: *copy from list above*
 
 
+## Troubleshooting issues with linux builds
+
+The account that is used to mount the Windows files system on the linux VM is configured to have its password expire intermittently. When this happens, linux builds will fail, reporting that the source files do not exist. The solution to this is to reset the password of the appropriate account.
+
+To find the username and password used by the linux builds, run `ideassh` from the IDEA command prompt. This opens a terminal in the linux command prompt, in which you can type `cat cifs-credentials.txt`. The contents of that file define the username and password that the linux machine to mount the Windows file system.
+
+On the Windows VM, use the User Accounts control panel to find the user named in the linux cifs-credentials.txt file, and update that user's password to match the password given in cifs-credentials.txt. Once you update the password, linux builds should work again.
+
 ## Assigned IP addresses
 
 |	| VE11C Linux  | VE11C Win    | XA30A Linux  | XA30A Win    |
