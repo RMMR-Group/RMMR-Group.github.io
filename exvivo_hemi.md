@@ -1,3 +1,8 @@
+---
+layout: page
+title: Ex Vivo Hemisphere Scanning
+nav_order: 3
+---
 # Ex Vivo Hemisphere Scanning
 
 We currently scan human hemispheres using the 7T scanner at Stellar Chance. Below is the process for these experiments.
