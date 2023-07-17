@@ -1,8 +1,9 @@
-![Sample and Coil](exvivo_hemi/sample_and_coil.jpg)
-
-## Introduction
+# Ex Vivo Hemisphere Scanning
 
 We currently scan human hemispheres using the 7T scanner at Stellar Chance. Below is the process for these experiments.
+
+![Sample and Coil](exvivo_hemi/sample_and_coil.jpg)
+
 
 ## Getting the Sample
 
