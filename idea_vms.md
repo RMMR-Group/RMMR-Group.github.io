@@ -178,5 +178,5 @@ On the Windows VM, use the User Accounts control panel to find the user named in
 
 |	| VE11C Linux  | VE11C Win    | VE12U_SP01 Linux | VE12U_SPO1 Win | XA30A Linux  | XA30A Win    |
 |-----  | -----        | -----        | ----         | -----        | ----         | -----        |
-| Dylan | 172.16.42.30 | 172.16.42.29 |        |         | 172.16.42.39 | 172.16.42.28 |
+| Dylan | 172.16.42.30 | 172.16.42.29 |        | 172.16.42.41        | 172.16.42.39 | 172.16.42.28 |
 | Shraddha | | | 172.16.42.25        | 172.16.42.24         | 172.16.42.27 | 172.16.42.26 |
