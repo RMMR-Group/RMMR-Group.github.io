@@ -30,7 +30,9 @@ You'll need to request both the Windows and Linux VMs associated with the versio
 * Windows Operating System: Windows 10 or Windows 7
 * Windows Template: *copy from list below*
 * Linux Template: *copy from list below*
-
+* Add VMs to Folder: Rad-Tisdal MRI
+* Place VMs on Network: tisdalvm-172.16.0.0/25
+  
 Here's a list of the templates associated with each IDEA verson
 
 |IDEA Version	| Windows					| Linux 					|
