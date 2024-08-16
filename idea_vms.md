@@ -29,7 +29,9 @@ You'll need to request both the Windows and Linux VMs associated with the versio
 * Ticket Description: New VM setup for Robust Methods of Magnetic Resonance (RMMR)
 * Windows Operating System: Windows 10 or Windows 7
 * Windows Template: *copy from list below*
+* Windows VM Name: <YourFirstName>_<IDEAVersion>_Win
 * Linux Template: *copy from list below*
+* Linux VM Name: <YourFirstName>_<IDEAVersion>_MARS
 * Add VMs to Folder: Rad-Tisdal MRI
 * Place VMs on Network: tisdalvm-172.16.0.0/25
   
