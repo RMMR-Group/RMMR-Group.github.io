@@ -24,14 +24,14 @@ You'll first need a PMACS account (ask Dylan to file a ticket for you). Once you
 ## Setting up a new virtual machine
 
 ### Instantiating the VMs
-You'll need to request both the Windows and Linux VMs associated with the version of IDEA you'd like to have setup. For this, you can use a ticket like this:
+You'll need to request both the Windows and Linux VMs associated with the version of IDEA you'd like to have setup. For this, you can use a ticket following the template below. **Do Not Just Copy This Template**; make sure to fill in the Template and VM Name lines with your specific information.
 
-* Ticket Description: New VM setup for Robust Methods of Magnetic Resonance (RMMR)
+* Ticket Description: New VM setup for Robust Methods for Magnetic Resonance (RMMR)
 * Windows Operating System: Windows 10 or Windows 7
 * Windows Template: *copy from list below*
-* Windows VM Name: <YourFirstName>_<IDEAVersion>_Win
+* Windows VM Name: \<YourFirstName\>_\<IDEAVersion\>_Win
 * Linux Template: *copy from list below*
-* Linux VM Name: <YourFirstName>_<IDEAVersion>_MARS
+* Linux VM Name: \<YourFirstName\>_\<IDEAVersion\>_MARS
 * Add VMs to Folder: Rad-Tisdal MRI
 * Place VMs on Network: tisdalvm-172.16.0.0/25
   
