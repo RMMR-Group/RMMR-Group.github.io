@@ -62,28 +62,19 @@ Pick the Linux VM for the IDEA version you're instantiating, and then click on `
 
 You will see a pop-up, in which you again choose `Launch Web Console` (this may require disabling pop-up blockers). Version-specific instructions follow below.
 
-### Configuring VE11C VMs
+### Configuring VE11C and VE12U VMs
 
-#### Linux VE11C
+#### Linux
 
 If you just get a black screen in the web console, tap any key to bring up the Linux login prompt.
 
 Log in as `root`. It will not require a password.
 
-We need to bring this machine's network connection online at the correct IP address. To do this, run:
+By default, the MARS machine should automatically be configured to use DHCP and get a valid IP address. To confirm this, run `ifconfig` and confirm that there are two active interfaces, one being the loopback (lo) and the other being some ethernet device (name changes with each IDEA version, but should be "en" something or "e" something). If you do not have an active ethernet interface, reach out to Dylan and we can figure out what's misconfigured in the image and make a note of how to fix it here for future users.
 
-```
-ifconfig eth0 up <ip>
-ifconfig eth0 netmask 255.255.255.0
-```
+You now need to setup a hostname so that your Windows VM can always find this Linux machine. To do this use your favorite editor to create the file `/etc/hostname` and enter the desired hostname for the linux machine. Note this cannot have underscores. I suggest `<your initials><idea version>mars` (e.g., `mdtve11cmars`) as this will avoid collisions while being succinct. One you have created this file, restart the the MARS machine with the `reboot` command.
 
-where you should replace `<ip>` with the IP address you were assigned for this machine. If you don't know the IP address, file a ticket to request you get assigned one and add it to the table at the end of this document.
-
-You can then close the web console for the linux system.
-
-Note that if you need to restart the Linux VM for some reason, you'll need to run those two commands again in order to reconnect it to the network.
-
-#### Windows VE11C
+#### Windows
 
 Using the same steps as above, now open the web console for the Windows version of the machine. 
 
@@ -91,13 +82,15 @@ Log in as user `IDEA` password `idea`
 
 Need to figure out firewall settings. For now, just disable the Windows Firewall.
 
-You should now be able to both connect to this system via RDP. The username:password for both these interfaces is now `idea:idea`. From here on out, I like to do things via RDP, and not via the web console.
+To configure the machine to use DHCP, go to `Control Panel > Network and Sharing Center` and then click on the ethernet connection icon (likely called "Local Area Connection" followed by a number). Click on "Properties". Select "Internet Protocol Version 4" and then click "Properties". Select "Obtain an IP address automatically" and "Obtain DNS serve address automatically". Accept the changes.
 
-Start IDEA and run `externalmars true`. You'll be prompted for the IP address of the Linux machine, which you should enter. You should now be able to build the Linux binaries for a given sequence.
+To configure the machine hostname, go to `Control Panel > System` and then click on "Change Settings". On the "Computer Name" tab, click "Change". Enter the desired hostname for the Windows machine. Note this cannot have underscores. I suggest `<your initials><idea version>win` (e.g., `mdtve11cwin`) as this will avoid collisions while being succinct. Accept the change and the system will need to be restarted.
 
-You should now be able to connect to this system via RDP (download Microsoft Remote Desktop or similar client). The username:password for is now `idea:idea`. From here on out, I like to do things via RDP, and not via the web console.
+You should now be able to connect to this system via RDP (download Microsoft Remote Desktop or similar client) as `<hostname>.pmacs.upenn.edu`. The username:password for is now `idea:idea`. From here on out, I like to do things via RDP, and not via the web console.
 
-On your local system, checkout the `N4_VE11C_LATEST_20160120` branch of the `idea_vmware_tools` repos from the group github. Make sure you name the directory `N4_VE11C_LATEST_20160120`, as scripts rely on this name (e.g., check this out to `~/IDEA/N4_VE11C_LATEST_20160120`).
+Start IDEA and run `externalmars true`. You'll be prompted for the IP address of the Linux machine (you can get this by running `ifconfig` on the MARS, or by just looking in the vSphere website), which you should enter. You should now be able to build the Linux binaries for a given sequence. In the future, we need to be able to access the mars via its hostname, so edit `C:\MIDEA\MIDEA.cfg` with a text editor. Change the line `ExternalMarsIp=<ip address>` to `ExternalMarsIp=<mars hostname>.pmacs.upenn.edu`. Now IDEA will resolve that hostname to find the IP address whenever it tries to connect to the MARS for linux compilation.
+
+*Optional* On your local system, checkout the branch of the `idea_vmware_tools` repo associated with your IDEA version (e.g., `N4_VE11C_LATEST_20160120`) from the group github -- these are convenience scripts for managing the VM remotely. Make sure you name the directory exactly as per the github branch name (e.g., `N4_VE11C_LATEST_20160120`), as scripts rely on this name (e.g., check this out to `~/IDEA/N4_VE11C_LATEST_20160120`).
 
 Configure your Remote Desktop client to share `~/IDEA/N4_VE11C_LATEST_20160120/` (or wherever you checked out the repos) with the remote system.
 
@@ -105,11 +98,11 @@ Configure your Remote Desktop client to share `~/IDEA/N4_VE11C_LATEST_20160120/`
 
 On the remote Windows system, enable sharing on `C:\MIDEA` for user IDEA. 
 
-You should now be able to mount `MIDEA` on your local system via SMB, using the `mount_midea_share.bash` script, which will mount it into the current directory as `./midea-mnt`. 
+You should now be able to mount `MIDEA` on your local system via SMB (if you've downloaded the idea_vmware_tools, you can use the `mount_midea_share.bash` script, which will mount it into the current directory as `./midea-mnt`).
 
-Once the remote drive is mounted locally, run `config_built_dir.sh` to ensure binaries are copied back to your local machine (you only need to do this once).
+*Optional* If you have the idea_vmware_tools, once the remote drive is mounted locally, run `config_built_dir.sh` to ensure binaries are copied back to your local machine (you only need to do this once).
 
-Put any source packages you have received from Siemens in the `packages` directory and run `install_source.sh`. This can be re-run whenever you get new source packages.
+*Optional* Put any source packages you have received from Siemens in the `packages` directory and run `install_source.sh`. This can be re-run whenever you get new source packages.
 
 ### Configuring XA30A VMs
 
