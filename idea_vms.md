@@ -162,6 +162,13 @@ If something goes wrong, you can always request PMACS to reset the VM. **THIS WI
 * Windows Template: *copy from list above* 
 * Linux Template: *copy from list above*
 
+## Troubleshooting issues with XA30 `poet` and `mp`
+
+IDEA seems to be unhappy with modern versions of VMWare (including the vSphere environment we run on). It will fail with a cryptic exception when trying to run `poet` or `mp` (and maybe other things...). The solution is to type the following command at your IDEA command prompt:
+
+`set OPENSSL_ia32cap=:~0x20000000`
+
+You will have to do this every time you start a new IDEA shell.
 
 ## Troubleshooting issues with linux builds
 
