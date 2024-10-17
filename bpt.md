@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Using IDEA Virtual Machines
+title: Setting up the beat pilot tone system
 nav_order: 3
 ---
 # Setting up the beat pilot tone system
