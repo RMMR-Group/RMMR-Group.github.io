@@ -186,3 +186,12 @@ auto ens32
 iface ens32 inet dhcp
 ```
 Once you've ensured that file exists rebooting the mars VM should bring the network online with DHCP support.
+
+## Troubleshooting issues with Windows ssh connections to mars in new Windows VMs
+
+The Windows VMs are not always configured to have their ssh automatically trust the mars as a host. This appears as cryptic error messages in linux builds, and the failure of `ideassh` to connect to the mars. The solution is to open a command prompt and run
+```
+cd C:\MIDEA\NXVA30A_162141\MrMake\tools
+plink -ssh <hostname for mars>
+```
+where `<hostname for mars>` should be replaced with your mars VMs hostname (e.g., `dylannxva30mars.pmacs.upenn.edu`). You will be asked to trust the connection and should choose yes. You can then disconect from the mars and your subsequent runs of `ideassh` should work.
