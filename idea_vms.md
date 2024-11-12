@@ -178,9 +178,11 @@ To find the username and password used by the linux builds, run `ideassh` from t
 
 On the Windows VM, use the User Accounts control panel to find the user named in the linux cifs-credentials.txt file, and update that user's password to match the password given in cifs-credentials.txt. Once you update the password, linux builds should work again.
 
-## Assigned IP addresses
+## Troubleshooting issues with linux networking in new VMs
 
-|	| VE11C Linux  | VE11C Win    | VE12U_SP01 Linux | VE12U_SPO1 Win | XA30A Linux  | XA30A Win    |
-|-----  | -----        | -----        | ----         | -----        | ----         | -----        |
-| Dylan | 172.16.42.30 | 172.16.42.29 |        | 172.16.42.41        | 172.16.42.39 | 172.16.42.28 |
-| Shraddha | | | 172.16.42.25        | 172.16.42.24         | 172.16.42.27 | 172.16.42.26 |
+The mars VMs are not always configured to have their networking correct out-of-the-box, as by default their networking would be automatically configured when they were brought online via the IDEA commands. Since we're running them "natively", you may need to manually bring the network interfaces online. If you don't see any active ethernet inteface when you run `ifconfig`, you can find all the interfaces using `ifconfig -a`. Then, you should look in `/etc/network/interfaces.d/` to find the configuration file for the ethernet interface (each file is named for the interface it configureds). If, for example, your interface is named `ens32` then you want to ensure there is a file named `ens32` in that directory, and its contents should be something like
+```
+auto ens32
+iface ens32 inet dhcp
+```
+Once you've ensured that file exists rebooting the mars VM should bring the network online with DHCP support.
