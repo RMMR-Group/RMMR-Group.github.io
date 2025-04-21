@@ -64,9 +64,12 @@ Localize the coil on the black dot, using the laser marker (recenter the coil ma
 
 ## Scanning protcol
 
-Register the subject as `INDD<INDD#>`. Enter a made-up DOB, height and weight.
+Register the subject as `INDD<INDD#>`. Enter a made-up DOB, height and weight. If the INDDID has a "." in it, replace it with a "x" (e.g., 12345.01 becomes 12345x01). Do NOT include strings like "Rpt" or "Rescan", or any other indicator that it is a rescan. This will be taken care of by the session label. Do NOT include "L" or "R" specification, or any other information other than the INDDID.
 
-Select the protocol `Research > DTisdall > Ex-vivo_20200106`
+Put the brain part in the Study Description field. This needs to be one of: “Hemi”, “MTL”, “MTLCut”, “FrontalLobe”, “OCC”, “Olfactory”
+If new brain part is being scanned and needs to be added to this dictionary, email Hamsi (radhakrh@pennmedicine.upenn.edu). Do not add any other information here.
+
+Select the protocol `Research > DTisdall > Ex-vivo_20200106` (THIS NEEDS TO BE UPDATED)
 
 Deselect `Load Program to Queue`
 
