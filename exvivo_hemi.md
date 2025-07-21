@@ -73,7 +73,7 @@ Select the protocol `Research > DTisdall > Ex-vivo_20200106` (THIS NEEDS TO BE U
 
 Deselect `Load Program to Queue`
 
-Add study comment `7THemi_INDD<INDD#>_<YYYYMMDD>@cfn:pmc_exvivo`
+Add study comment `INDD<INDD#>@cfn:pmc_exvivo`
 
 Set body part to `Brain` if not automatically selected
 
