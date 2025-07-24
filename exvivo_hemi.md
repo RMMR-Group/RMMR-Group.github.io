@@ -144,7 +144,7 @@ See where the green box moves (big green box should be outside). This will preve
 Adjust the position and increase the number of slices per slab to include all the tissue inside the yellow box. Run the localizer. When prompted, select 'Manual' shimming to prevent automatic reshim. Periodically ‘Window’ the localizer images to see the tissue boundaries and check for signal dropout across the hemisphere.
 Readjust the sample inside the coil in case of significant signal dropout in the anterior part of the hemisphere. No need to recalibrate the coil, but manual shimming steps have to be repeated.   
 
-When satisfied with 't2space_0.6mm_* ' localizer images, open the main `t2space_0.3mm_P1_normalSAR_4avg` scan protocol.
+When satisfied with 't2space_1mm_* ' localizer images, open the main `t2space_0.3mm_P1_normalSAR_4avg` scan protocol.
 Again, copy shim parameters from the localizer as discussed above. Adjust the position and increase the number of slices per slab to include all the tissue inside the yellow box. Run `t2space_0.3mm_P1_normalSAR_4avg`  protocol (~1h 55 min ). When prompted, select 'Manual' shimming to prevent automatic reshim.
 
 
