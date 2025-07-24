@@ -86,6 +86,8 @@ Select Localizer from `Research > DTisdall > Ex-vivo_20200106` folder.
 
 Open localizer protocol (has to be open for adjustments to be active)
 
+**Note that when opening each scan a dialogue box will appear saying the shim has been manually adjusted --- this is correct and you should select the "Manual" option from the dialogue box**
+
 Options > Adjustments
 
 The adjustments are done in **Frequency, Transmitter and 3D Shim**  cards.
@@ -131,7 +133,7 @@ Inspect the localizer images and the slab location box. Move the box to the cent
 
 Take another localizer scan. 
 
-When satisfied with general localizer images, open the 't2space_0.6mm_* ' protocol.  This is a 5 min scan used as a second localizer to get a better idea of the signal loss accross the hemisphere. 
+When satisfied with general localizer images, open the 't2space_1mm_* ' protocol.  This is a ~2 min scan used as a second localizer to get a better idea of the signal loss accross the hemisphere. 
 
 Before copying the parameters, select the ‘coil’ button from ‘head with strips’ icon.
 
