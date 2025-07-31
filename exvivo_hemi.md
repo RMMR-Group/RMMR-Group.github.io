@@ -69,7 +69,7 @@ Register the subject as `INDD<INDD#>`. Enter a made-up DOB, height and weight. I
 Put the brain part in the Study Description field. This needs to be one of: “Hemi”, “MTL”, “MTLCut”, “FrontalLobe”, “OCC”, “Olfactory”
 If new brain part is being scanned and needs to be added to this dictionary, email Hamsi (radhakrh@pennmedicine.upenn.edu). Do not add any other information here.
 
-Select the protocol `Research > DTisdall > Ex-vivo_20200106` (THIS NEEDS TO BE UPDATED)
+Select the protocol `Research > DTisdall > Ex-vivo_20250724`
 
 Deselect `Load Program to Queue`
 
@@ -82,7 +82,7 @@ Make sure both channels are turned on.
 
 ## Scanning Procedure
 
-Select Localizer from `Research > DTisdall > Ex-vivo_20200106` folder.
+Select Localizer from `Research > DTisdall > Ex-vivo_20250724` folder.
 
 Open localizer protocol (has to be open for adjustments to be active)
 
@@ -94,18 +94,18 @@ The adjustments are done in **Frequency, Transmitter and 3D Shim**  cards.
 
 **Frequency  Card**
 
-Hit  Go -> Apply (make sure it converges, might need to repeat a few times) 
+Hit  `Go` (make sure it converges, might need to repeat a few times) 
 
 ![Sample and Coil](exvivo_hemi/frequency_adjustments.jpg)
 
 
 **Transmitter Card** 
 
-Select  'Double Echo Sequence'  from drop down menu.
+Select  'B1Map 2D'  from `Sequence & Resolution` drop down menu.
 
 Starting Voltage can be set to 30 V.
 
-Hit Go > Apply. 
+Hit `Go` (make sure it converges, might need to repeat a few times) 
 
 Voltage should be below 70, otherwise there is an issue and you should not proceed with the scan! 
 
@@ -125,7 +125,9 @@ Measure > Calculate > Apply
 
 ![Sample and Coil](exvivo_hemi/shim_adjustments.jpg )
 
-Repeat several times, periodically switch to Frequency tab and hit go. Monitor the FWHM changes ( < 80 OK). Make sure it converges.
+Repeat several times, periodically switch to Frequency tab and hit `Go`. Monitor the FWHM changes ( < 80 OK). Make sure it converges.
+
+*You are now done adjustments and can close the `Manual Adjustments` window.
 
 Check that both coils are on, then RUN the localizer.
 
