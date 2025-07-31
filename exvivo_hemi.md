@@ -135,25 +135,19 @@ Inspect the localizer images and the slab location box. Move the box to the cent
 
 Take another localizer scan. 
 
-When satisfied with general localizer images, open the 't2space_1mm_* ' protocol.  This is a ~2 min scan used as a second localizer to get a better idea of the signal loss accross the hemisphere. 
+When satisfied with general localizer images, open the 't2space_1mm_* ' protocol.  This is a ~2 min scan used as a second localizer to get a better idea of the signal loss accross the hemisphere. When prompted, select 'Manual' shimming to prevent automatic reshim. 
 
-Before copying the parameters, select the ‘coil’ button from ‘head with strips’ icon.
+Adjust the position and increase the number of slices per slab to include all the tissue inside the yellow box. Run the localizer. Review the localizer images to see the tissue boundaries and check for signal dropout across the hemisphere.
 
-Copy parameters > Copy `Adjust Volume` from localizer to T2 scan protocol. 
+Readjust the sample inside the coil in case of significant signal dropout in the anterior part of the hemisphere. No need to recalibrate the coil, but manual adjustment steps have to be repeated.   
 
-See where the green box moves (big green box should be outside). This will prevent automatic re-shimming again. 
-
-Adjust the position and increase the number of slices per slab to include all the tissue inside the yellow box. Run the localizer. When prompted, select 'Manual' shimming to prevent automatic reshim. Periodically ‘Window’ the localizer images to see the tissue boundaries and check for signal dropout across the hemisphere.
-Readjust the sample inside the coil in case of significant signal dropout in the anterior part of the hemisphere. No need to recalibrate the coil, but manual shimming steps have to be repeated.   
-
-When satisfied with 't2space_1mm_* ' localizer images, open the main `t2space_0.3mm_P1_normalSAR_4avg` scan protocol.
-Again, copy shim parameters from the localizer as discussed above. Adjust the position and increase the number of slices per slab to include all the tissue inside the yellow box. Run `t2space_0.3mm_P1_normalSAR_4avg`  protocol (~1h 55 min ). When prompted, select 'Manual' shimming to prevent automatic reshim.
+When satisfied with 't2space_1mm_* ' localizer images, continue with the rest of the scans in the queue. For each scan, adjust the position and increase the number of slices per slab to include all the tissue inside the yellow box.
 
 
 
 ## Breaking down the setup
 
-Take it apart in the opposite order to how you assembled it. Remember to return the "Helmut box" to the shelf, leave the straps wrapped up in their container, and return the foam "sheets" to where you found them.
+Take it apart in the opposite order to how you assembled it. Remember to return the "Helmut box" to the shelf.
 
 Remove the coil (wear gloves!) and bring it back to Karthik's desk. Remove the sample bag and put it back in the box you used to transport it from Dave's lab.
 
